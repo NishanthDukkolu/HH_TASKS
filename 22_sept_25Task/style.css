@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(31, 30, 30);
+    color: white;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.round {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: round 2s linear infinite;
+}
+
+@keyframes round {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        box-shadow: 1px 5px 2px green;
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+        box-shadow: 1px 5px 2px blue;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        box-shadow: 1px 5px 2px green;
+    }
+}
+
+.round:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(225,255,255,.3);
+}
+
+span {
+    color: rgb(242, 246, 6);
+    font-size: 20px;
+    animation: text 3s ease-in-out;
+}
+
+@keyframes text {
+    50% {
+        color: black;
+    }
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    transition: 1s ease-in-out;
+
+}
+button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 15px orange,
+                0 0 30px orange,
+                0 0 45px orange; 
+}
+
+
+
+
+
+
+
