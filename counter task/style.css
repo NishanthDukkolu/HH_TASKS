@@ -1,0 +1,62 @@
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+
+    .counter-container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+      width: 320px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #counter {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #2575fc;
+      margin: 20px 0;
+      transition: transform 0.2s ease;
+    }
+
+    button {
+      padding: 12px 20px;
+      margin: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .increase {
+      background: #28a745;
+      color: white;
+    }
+
+    .decrease {
+      background: #dc3545;
+      color: white;
+    }
+
+    .reset {
+      background: #ffc107;
+      color: black;
+    }
