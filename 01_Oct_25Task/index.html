@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>E-Commerce Store</h2>
+      <div class="login">
+        <input id="username" type="text" placeholder="Username">
+        <button class="btn" onclick="login()">Login</button>
+      </div>
+      <p id="welcome"></p>
+
+      <h3>Products</h3>
+      <div class="products">
+        <button class="product-btn" onclick="addToCart('Shoes', 50)">Add Shoes ($200)</button>
+        <button class="product-btn" onclick="addToCart('Bag', 30)">Add Bag ($30)</button>
+        <button class="product-btn" onclick="addToCart('Watch', 20)">Add Watch ($199)</button>
+      </div>
+
+      <div class="discount">
+        <input id="discountCode" type="text" placeholder="Enter Discount Code">
+        <button class="btn ghost" onclick="applyDiscount()">Apply</button>
+      </div>
+      <p id="discountMsg"></p>
+    </div>
+
+    <div class="cart">
+      <h3>Cart</h3>
+      <ul id="cartItems"></ul>
+      <div class="total-row"> <span>Total:</span> <span>$<span id="total">0</span></span> </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
