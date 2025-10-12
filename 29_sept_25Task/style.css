@@ -1,0 +1,64 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: rgb(54, 54, 54);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(105, 102, 102);
+}
+
+#colorCode {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+
+/* For tablets */
+@media (max-width: 768px) {
+  button {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+  #colorCode {
+    font-size: 14px;
+  }
+}
