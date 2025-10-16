@@ -20,7 +20,7 @@ function makeId() {
 function loadFromLocal() {
   const data = localStorage.getItem('tasks');
   if (data) {
-    allTasks = JSON.parse(data);
+    allTasks = CSV.parse(data);
   }
 }
 
